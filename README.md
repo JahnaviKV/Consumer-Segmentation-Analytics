@@ -13,7 +13,6 @@
 8. [🧾 Tools & Technologies](#-tools--technologies)
 9. [📚 Conclusion](#-conclusion)
 
----
 
 ## 📘 Executive Summary
 
