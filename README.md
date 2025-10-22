@@ -1,11 +1,3 @@
-<h1 align="center">🛍️ Customer Segmentation & Predictive Marketing Analysis</h1>
-<p align="center">
-  <i>Enhancing Targeted Marketing through Data-Driven Insights</i><br>
-  📊 Developed for AXANTEUS | 🧠 R-Based Machine Learning | 🎯 Clustering & Predictive Analytics
-</p>
-
----
-
 ## 🧭 Table of Contents
 
 1. [📘 Executive Summary](#-executive-summary)
