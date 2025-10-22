@@ -1,161 +1,166 @@
-# Consumer-Segmentation-Analytics
+<h1 align="center">🛍️ Customer Segmentation & Predictive Marketing Analysis</h1>
+<p align="center">
+  <i>Enhancing Targeted Marketing through Data-Driven Insights</i><br>
+  📊 Developed for AXANTEUS | 🧠 R-Based Machine Learning | 🎯 Clustering & Predictive Analytics
+</p>
 
-Table of Contents
+---
 
-📘 Executive Summary
+## 🧭 Table of Contents
 
-🎯 Objectives
+1. [📘 Executive Summary](#-executive-summary)
+2. [🎯 Objectives](#-objectives)
+3. [🧮 Methodology](#-methodology)
+   - [Data Preparation](#data-preparation)
+   - [Exploratory Data Analysis (EDA)](#exploratory-data-analysis-eda)
+   - [Segmentation Analysis](#segmentation-analysis)
+4. [🤖 Predictive Modeling](#-predictive-modeling)
+5. [💡 Business Impact](#-business-impact)
+6. [📈 Recommendations](#-recommendations)
+7. [🧠 Key Insights](#-key-insights)
+8. [🧾 Tools & Technologies](#-tools--technologies)
+9. [📚 Conclusion](#-conclusion)
 
-🧮 Methodology
+---
 
-🤖 Predictive Modeling
+## 📘 Executive Summary
 
-💡 Business Impact
+In today’s competitive market, understanding **consumer behavior** is key to optimizing marketing strategies and improving brand loyalty.  
+This project, conducted for **AXANTEUS**, a market research agency, focuses on developing a **behavior-based segmentation model** to overcome the limitations of traditional demographic segmentation.
 
-📈 Recommendations
+Using data on demographics, purchasing patterns, and promotional responses, the analysis identifies **value-conscious** and **brand-loyal** consumer groups, enabling clients to:
 
-🧠 Key Insights
+- Allocate marketing budgets effectively  
+- Personalize promotional campaigns  
+- Strengthen customer loyalty  
 
-🧾 Tools & Technologies
+---
 
-📚 Conclusion
+## 🎯 Objectives
 
-📘 Executive Summary
+### 🏢 Business Goals
+- Transition from **demographic-based** to **behavior-based segmentation**
+- Identify **value-conscious** and **brand-loyal** customers
+- Develop **predictive models** for targeted marketing and promotion optimization  
 
-Title: Enhancing Targeted Marketing through Data-Driven Insights
+### 🧠 Analytical Goals
+- Segment consumers by **purchase behavior** and **basis for purchase** using clustering  
+- Classify **value-conscious consumers** using supervised learning  
+- Predict **brand loyalty** and **purchase volume** using regression models  
 
-In today’s competitive market, understanding consumer behavior is essential for optimizing marketing strategies and improving brand loyalty. This project, conducted for AXANTEUS, a market research agency, focuses on developing a behavior-based segmentation model to overcome the limitations of traditional demographic segmentation.
+---
 
-Using data on demographics, purchasing patterns, and promotional responses, the analysis identifies value-conscious and brand-loyal consumer groups, enabling AXANTEUS’s clients to allocate budgets effectively, personalize campaigns, and improve loyalty outcomes.
+## 🧮 Methodology
 
-🎯 Objectives
-Business Goals
+### 1️⃣ Data Preparation
+- **Dataset:** 600 observations, 46 variables (demographic, purchase, and promotion data)  
+- **Cleaning:** Managed missing values, removed zero entries, and renamed variables for clarity  
+- **Transformation:** Standardized features for clustering; used **PCA** to assess dimensionality (no reduction required)
 
-Transition from demographic-based to behavior-based segmentation.
+### 2️⃣ Exploratory Data Analysis (EDA)
+- Analyzed **distributions, correlations**, and **outliers**  
+- Visualized key relationships between **demographics** and **purchasing behavior**
 
-Identify value-conscious consumers and brand-loyal customers.
+### 3️⃣ Segmentation Analysis
+Performed **K-Means Clustering** across three perspectives:
 
-Develop predictive models to support targeted marketing and promotion optimization.
+#### 📦 Purchase Behavior Segmentation
+| Cluster | Description |
+|----------|--------------|
+| 1 | High-volume, cost-conscious shoppers |
+| 2 | Average buyers with moderate brand engagement |
+| 3 | Loyal, promotion-driven consumers |
 
-Analytical Goals
+#### 💰 Basis for Purchase Segmentation
+| Cluster | Description |
+|----------|--------------|
+| 1 | Balanced mid-tier buyers |
+| 2 | Premium consumers valuing exclusivity |
+| 3 | Price-sensitive, promotion-focused buyers |
 
-Segment consumers by purchase behavior and basis for purchase using clustering.
+#### 🔗 Combined Segmentation
+| Cluster | Segment Type | Behavior Description |
+|----------|---------------|----------------------|
+| 1 | Balanced Consumers | Moderate engagement, balanced spending |
+| 2 | Value-Oriented | Promotion-driven, cost-conscious |
+| 3 | Premium Brand-Loyal | Exclusive, loyal, and high-value customers |
 
-Classify value-conscious consumers using supervised learning.
+---
 
-Predict brand loyalty and purchasing volume using regression models.
+## 🤖 Predictive Modeling
 
-🧮 Methodology
-1. Data Preparation
+### 1️⃣ Classification – Predicting Value-Conscious Consumers
 
-Dataset: 600 observations, 46 variables (demographic, purchase, and promotion data).
+| Model | Accuracy | AUC | Sensitivity | Specificity |
+|--------|----------|-----|-------------|--------------|
+| Logistic Regression | 58.9% | 0.63 | — | — |
+| Decision Tree | 63.9% | 0.61 | — | — |
+| **Random Forest** | **65.6%** | **0.65** | **76.4%** | **50.0%** |
 
-Cleaning: Handled missing and zero values, renamed columns for clarity.
+> ✅ **Best Model:** Random Forest — most effective at identifying **value-conscious** consumers.
 
-Transformation: Standardized variables for clustering; applied PCA for dimensionality review (no reduction required).
+---
 
-2. Exploratory Data Analysis (EDA)
+### 2️⃣ Regression – Predicting Total Purchase Volume
 
-Analyzed distributions, correlations, and outliers.
+| Model | R² | Notes |
+|--------|----|-------|
+| Linear Regression | **0.844** | Best overall fit with low RMSE and MAE |
+| Regression Tree | — | Revealed interpretable rules identifying key drivers (Total Purchase Value, Education Level, Socioeconomic Class) |
 
-Visualized relationships between demographic and behavioral features.
+---
 
-3. Segmentation Analysis
+## 💡 Business Impact
 
-Used K-Means Clustering across three dimensions:
+The behavior-based segmentation model enables AXANTEUS to:
 
-Purchase Behavior Segmentation
+- Understand consumers **beyond demographics**
+- Target **cost-sensitive clusters** (value-conscious)
+- Reward **brand-loyal consumers**
+- Optimize **marketing spend** through precise targeting
 
-Cluster 1: High-volume, cost-conscious shoppers
+| Cluster | Segment Type | Marketing Focus |
+|----------|---------------|----------------|
+| 1 | General Buyers | Mid-range offers, bundle promotions |
+| 2 | Value-Oriented | Discounts, loyalty programs |
+| 3 | Brand-Loyal Buyers | Premium access, exclusive rewards |
 
-Cluster 2: Average buyers with moderate brand engagement
+---
 
-Cluster 3: Loyal and promotion-driven consumers
+## 📈 Recommendations
 
-Basis for Purchase Segmentation
+- **Value-Conscious Consumers:** Emphasize discounts, flash sales, and loyalty rewards.  
+- **Brand-Loyal Consumers:** Highlight product quality, exclusivity, and VIP experiences.  
+- **General Buyers:** Maintain engagement with regular, balanced promotions.  
+- Continuously **update segmentation models** as consumer behavior evolves.
 
-Cluster 1: Balanced mid-tier buyers
+---
 
-Cluster 2: Premium consumers valuing exclusivity
+## 🧠 Key Insights
 
-Cluster 3: Price-sensitive, promotion-focused buyers
+- Behavior-based segmentation reveals deeper insights into **purchase motivations**.  
+- Predictive models enable **targeted campaign design** and **customer retention strategies**.  
+- The **Random Forest model** offers the most reliable classification of value-conscious consumers.  
+- Data-driven segmentation enhances **AXANTEUS’s strategic marketing decisions**.
 
-Combined Segmentation
+---
 
-Cluster 1: Balanced consumers
+## 🧾 Tools & Technologies
 
-Cluster 2: Value-oriented, promotion-driven segment
+**Language:** R  
 
-Cluster 3: Premium brand-loyal consumers
+**Libraries:**  
+`dplyr`, `ggplot2`, `factoextra`, `cluster`, `caret`, `randomForest`
 
-🤖 Predictive Modeling
-1. Classification – Predicting Value-Conscious Consumers
+**Techniques Used:**  
+- Exploratory Data Analysis (EDA)  
+- K-Means Clustering  
+- Principal Component Analysis (PCA)  
+- Logistic Regression, Decision Trees, Random Forest  
+- Linear & Regression Tree Modeling  
 
-Models developed:
+---
 
-Model	Accuracy	AUC
-Logistic Regression	58.9%	0.63
-Decision Tree	63.9%	0.61
-Random Forest	65.6%	0.65
+## 📚 Conclusion
 
-📊 Best Model: Random Forest
-
-Sensitivity: 76.4%
-
-Specificity: 50.0%
-
-Strong predictor of value-conscious consumer behavior.
-
-2. Regression – Predicting Total Purchase Volume
-
-Linear Regression: R² = 0.844 → Best fit with lower RMSE and MAE.
-
-Regression Tree: Interpretable rules identifying key drivers such as Total Purchase Value, Education Level, and Socioeconomic Class.
-
-💡 Business Impact
-
-The segmentation approach enables AXANTEUS to:
-
-Understand consumers beyond demographics.
-
-Target promotions to cost-sensitive clusters (Value-Conscious).
-
-Reward loyalty among premium brand buyers.
-
-Optimize marketing spend through precision targeting.
-
-Cluster	Segment Type	Marketing Focus
-1	General Buyers	Mid-range offers, bundle promotions
-2	Value-Oriented	Discounts, loyalty programs
-3	Brand-Loyal Buyers	Premium access, exclusive rewards
-📈 Recommendations
-
-Value-Conscious Consumers: Emphasize discounts, flash sales, and reward programs.
-
-Brand-Loyal Consumers: Highlight product quality and exclusivity (e.g., VIP campaigns).
-
-General Buyers: Maintain engagement through regular, balanced marketing.
-
-Continuously update segmentation models based on evolving consumer data.
-
-🧠 Key Insights
-
-Behavior-based segmentation provides a deeper understanding of what drives consumer choices.
-
-Predictive models enable proactive targeting for both promotions and brand retention.
-
-The Random Forest model offers the most reliable classification of value-conscious consumers.
-
-Data-driven segmentation enhances AXANTEUS’s strategic recommendations for its clients.
-
-🧾 Tools & Technologies
-
-Language: R
-
-Libraries: dplyr, ggplot2, factoextra, cluster, caret, randomForest
-
-Techniques: EDA, K-Means Clustering, PCA, Logistic Regression, Decision Trees, Random Forest, Linear & Regression Tree Analysis
-
-📚 Conclusion
-
-The project successfully developed a comprehensive consumer segmentation framework combining clustering and predictive modeling. This approach transitions AXANTEUS from traditional demographic segmentation to a behavior-driven analytics model, empowering smarter marketing decisions and stronger consumer engagement.
+This project successfully developed a **comprehensive consumer segment**
