@@ -1,17 +1,17 @@
 ## 🧭 Table of Contents
 
-1. [📘 Executive Summary](#-executive-summary)
-2. [🎯 Objectives](#-objectives)
-3. [🧮 Methodology](#-methodology)
+1. [ Executive Summary](#-executive-summary)
+2. [ Objectives](#-objectives)
+3. [ Methodology](#-methodology)
    - [Data Preparation](#data-preparation)
    - [Exploratory Data Analysis (EDA)](#exploratory-data-analysis-eda)
    - [Segmentation Analysis](#segmentation-analysis)
-4. [🤖 Predictive Modeling](#-predictive-modeling)
-5. [💡 Business Impact](#-business-impact)
-6. [📈 Recommendations](#-recommendations)
-7. [🧠 Key Insights](#-key-insights)
-8. [🧾 Tools & Technologies](#-tools--technologies)
-9. [📚 Conclusion](#-conclusion)
+4. [ Predictive Modeling](#-predictive-modeling)
+5. [ Business Impact](#-business-impact)
+6. [ Recommendations](#-recommendations)
+7. [ Key Insights](#-key-insights)
+8. [ Tools & Technologies](#-tools--technologies)
+9. [ Conclusion](#-conclusion)
 
 
 ## 📘 Executive Summary
