@@ -1,4 +1,4 @@
-## 🧭 Table of Contents
+##  Table of Contents
 
 1. [ Executive Summary](#-executive-summary)
 2. [ Objectives](#-objectives)
@@ -14,7 +14,7 @@
 9. [ Conclusion](#-conclusion)
 
 
-## 📘 Executive Summary
+##  Executive Summary
 
 In today’s competitive market, understanding **consumer behavior** is key to optimizing marketing strategies and improving brand loyalty.  
 This project, conducted for **AXANTEUS**, a market research agency, focuses on developing a **behavior-based segmentation model** to overcome the limitations of traditional demographic segmentation.
@@ -27,49 +27,49 @@ Using data on demographics, purchasing patterns, and promotional responses, the 
 
 ---
 
-## 🎯 Objectives
+##  Objectives
 
-### 🏢 Business Goals
+###  Business Goals
 - Transition from **demographic-based** to **behavior-based segmentation**
 - Identify **value-conscious** and **brand-loyal** customers
 - Develop **predictive models** for targeted marketing and promotion optimization  
 
-### 🧠 Analytical Goals
+###  Analytical Goals
 - Segment consumers by **purchase behavior** and **basis for purchase** using clustering  
 - Classify **value-conscious consumers** using supervised learning  
 - Predict **brand loyalty** and **purchase volume** using regression models  
 
 ---
 
-## 🧮 Methodology
+##  Methodology
 
-### 1️⃣ Data Preparation
+### 1️ Data Preparation
 - **Dataset:** 600 observations, 46 variables (demographic, purchase, and promotion data)  
 - **Cleaning:** Managed missing values, removed zero entries, and renamed variables for clarity  
 - **Transformation:** Standardized features for clustering; used **PCA** to assess dimensionality (no reduction required)
 
-### 2️⃣ Exploratory Data Analysis (EDA)
+### 2️ Exploratory Data Analysis (EDA)
 - Analyzed **distributions, correlations**, and **outliers**  
 - Visualized key relationships between **demographics** and **purchasing behavior**
 
-### 3️⃣ Segmentation Analysis
+### 3️ Segmentation Analysis
 Performed **K-Means Clustering** across three perspectives:
 
-#### 📦 Purchase Behavior Segmentation
+####  Purchase Behavior Segmentation
 | Cluster | Description |
 |----------|--------------|
 | 1 | High-volume, cost-conscious shoppers |
 | 2 | Average buyers with moderate brand engagement |
 | 3 | Loyal, promotion-driven consumers |
 
-#### 💰 Basis for Purchase Segmentation
+####  Basis for Purchase Segmentation
 | Cluster | Description |
 |----------|--------------|
 | 1 | Balanced mid-tier buyers |
 | 2 | Premium consumers valuing exclusivity |
 | 3 | Price-sensitive, promotion-focused buyers |
 
-#### 🔗 Combined Segmentation
+####  Combined Segmentation
 | Cluster | Segment Type | Behavior Description |
 |----------|---------------|----------------------|
 | 1 | Balanced Consumers | Moderate engagement, balanced spending |
@@ -78,9 +78,9 @@ Performed **K-Means Clustering** across three perspectives:
 
 ---
 
-## 🤖 Predictive Modeling
+##  Predictive Modeling
 
-### 1️⃣ Classification – Predicting Value-Conscious Consumers
+###  Classification – Predicting Value-Conscious Consumers
 
 | Model | Accuracy | AUC | Sensitivity | Specificity |
 |--------|----------|-----|-------------|--------------|
@@ -88,11 +88,11 @@ Performed **K-Means Clustering** across three perspectives:
 | Decision Tree | 63.9% | 0.61 | — | — |
 | **Random Forest** | **65.6%** | **0.65** | **76.4%** | **50.0%** |
 
-> ✅ **Best Model:** Random Forest — most effective at identifying **value-conscious** consumers.
+>  **Best Model:** Random Forest — most effective at identifying **value-conscious** consumers.
 
 ---
 
-### 2️⃣ Regression – Predicting Total Purchase Volume
+###  Regression – Predicting Total Purchase Volume
 
 | Model | R² | Notes |
 |--------|----|-------|
@@ -101,7 +101,7 @@ Performed **K-Means Clustering** across three perspectives:
 
 ---
 
-## 💡 Business Impact
+##  Business Impact
 
 The behavior-based segmentation model enables AXANTEUS to:
 
@@ -118,7 +118,7 @@ The behavior-based segmentation model enables AXANTEUS to:
 
 ---
 
-## 📈 Recommendations
+##  Recommendations
 
 - **Value-Conscious Consumers:** Emphasize discounts, flash sales, and loyalty rewards.  
 - **Brand-Loyal Consumers:** Highlight product quality, exclusivity, and VIP experiences.  
@@ -127,7 +127,7 @@ The behavior-based segmentation model enables AXANTEUS to:
 
 ---
 
-## 🧠 Key Insights
+##  Key Insights
 
 - Behavior-based segmentation reveals deeper insights into **purchase motivations**.  
 - Predictive models enable **targeted campaign design** and **customer retention strategies**.  
@@ -136,7 +136,7 @@ The behavior-based segmentation model enables AXANTEUS to:
 
 ---
 
-## 🧾 Tools & Technologies
+##  Tools & Technologies
 
 **Language:** R  
 
@@ -152,6 +152,6 @@ The behavior-based segmentation model enables AXANTEUS to:
 
 ---
 
-## 📚 Conclusion
+##  Conclusion
 
 This project successfully developed a **comprehensive consumer segment**
